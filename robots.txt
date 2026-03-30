@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://readytogrowinitiative.org/sitemap.xml
