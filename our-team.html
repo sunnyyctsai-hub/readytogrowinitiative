@@ -3,78 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meet the passionate student team behind Ready to Grow Initiative.">
+    <meta name="description" content="Meet the team behind Ready to Grow Initiative - our directors, international board members, and chapter boards.">
     <title>Our Team | Ready to Grow Initiative</title>
     <link rel="canonical" href="https://readytogrowinitiative.org/our-team.html">
     <link rel="stylesheet" href="styles.css">
     <style>
-        .team-hero-text {
-            max-width: 900px;
-            margin: 2rem auto;
-            font-size: 1.05rem;
-            line-height: 1.8;
+        .team-section {
+            margin-bottom: 5rem;
         }
-        
         .team-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2.5rem;
         }
-        
-        .team-member {
+        .team-card {
             background-color: white;
-            border-radius: 8px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
-        .team-member-photo {
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .team-card-photo {
             width: 100%;
-            height: 350px;
-            background-color: var(--sage-green);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2rem;
+            height: 260px;
+            object-fit: cover;
+            object-position: top;
+            display: block;
         }
-        
-        .team-member-content {
-            padding: 2rem;
+        .team-card-body {
+            padding: 1.8rem;
         }
-        
-        .team-member h3 {
+        .team-card-name {
+            font-size: 1.25rem;
+            font-weight: bold;
             color: var(--dark-text);
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
         }
-        
-        .team-member-role {
+        .team-card-role {
+            font-size: 0.95rem;
             color: var(--coral-pink);
-            font-size: 1rem;
-            margin-bottom: 1.5rem;
             font-style: italic;
+            font-weight: bold;
+            margin-bottom: 1.2rem;
         }
-        
-        .team-member p {
-            line-height: 1.8;
-            color: var(--dark-text);
+        .team-card-bio {
+            font-size: 0.92rem;
+            line-height: 1.75;
+            color: #555;
+        }
+        .section-divider {
+            border: none;
+            border-top: 2px solid var(--coral-pink);
+            margin: 4rem 0;
+            opacity: 0.2;
+        }
+        .section-subtitle {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 1rem;
+            color: #666;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        .section-title-pink,
+        .section-title-green {
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .team-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
+
     <nav class="navbar">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="index.html" class="logo" style="text-decoration: none;">
+                <a href="index.html" class="logo">
                     <img src="Readytogrow_logo.jpg" alt="Ready to Grow Logo" style="height: 50px; width: auto; margin-right: 10px; vertical-align: middle;">
                     <span class="logo-text">READY TO GROW</span>
                 </a>
                 <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span>
                 </button>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
@@ -93,102 +108,253 @@
     <section class="page-hero">
         <div class="container">
             <h1>Our Team</h1>
-            <div class="team-hero-text">
-                <p>The Ready to Grow team is made up of passionate, committed students who each play a vital role in bringing our mission to life. Our board works collaboratively to design workshops, create educational resources, manage outreach, and ensure smooth operations across all departments. From planning events and developing caregiver materials to managing partnerships and social media, every member contributes their unique skills to help children and families thrive.</p>
-                <p style="margin-top: 1rem;"
-            </div>
+            <p>Meet the dedicated individuals behind Ready to Grow Initiative, working together to support early childhood development across Orange County and beyond.</p>
         </div>
     </section>
 
     <section class="content-section">
         <div class="container">
-            <h2 class="section-title-pink" style="margin-bottom: 3rem;">Meet Our Team</h2>
-            
-            <div class="team-grid">
-                <!-- Annie -->
-                <div class="team-member">
-                    <div class="team-member-photo">
-                        <img src="Annie.jpg" alt="Annie Chien" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="team-member-content">
-                        <h3>Annie </h3>
-                        <p class="team-member-role">Executive Director</p>
-                        <p>Annie is a high school junior with a growing interest in pediatric health and child development. While shadowing a pediatrician, she was able to use tools like the Denver Developmental Screening Test to observe children's growth and possible delays. These visits helped identify developmental concerns, but Annie realized that children often lack the preventative and ongoing support needed to reach these milestones. Upon further investigation, she learned about the accessibility gap in underserved communities, a deficit that programs like HeadStart and Parents as Teachers are not fully eliminating. Annie was inspired by this experience to found Ready to Grow Initiative in hopes of providing a low-barrier, fully-supported environment for every child's development.</p>
-                    </div>
-                </div>
 
-                <!-- Megan -->
-                <div class="team-member">
-                    <div class="team-member-photo">
-                        <img src="Megan.jpeg" alt="Megan" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="team-member-content">
-                        <h3>Megan </h3>
-                        <p class="team-member-role">Deputy Executive Director</p>
-                        <p>Megan is a high school freshman with a strong passion for using technology to help others and support children's development. She has extensive experience in competitive robotics, where she learned problem-solving, teamwork, and creative thinking. Megan has also mentored younger students in robotics, giving her first-hand experience guiding children and helping them build confidence in STEM skills. She is excited to join the Ready to Grow Initiative because it allows her to combine her love for technology, mentorship, and community service to support children during their critical early years. Megan hopes to create engaging, hands-on experiences for children, provide guidance to families, and continue learning from the inspiring community of peers and educators involved in the initiative.</p>
-                    </div>
-                </div>
+            <!-- ===== DIRECTORS ===== -->
+            <div class="team-section">
+                <h2 class="section-title-pink">Directors</h2>
+                <p class="section-subtitle">Our leadership team drives the vision and mission of Ready to Grow Initiative.</p>
+                <div class="team-grid">
 
-                <!-- Advaita -->
-                <div class="team-member">
-                    <div class="team-member-photo">
-                        <img src="ADVAITA.jpg" alt="Advaita Venkatesh" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/annie.png" alt="Annie Chien">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Annie Chien</p>
+                            <p class="team-card-role">Executive Director / Chief Editor</p>
+                            <p class="team-card-bio">Annie Chien is a rising senior and the Founder of Ready to Grow, a nonprofit dedicated to empowering young children and families through early childhood development and caregiver education. Inspired by her passion for working with children, she believes every child deserves the opportunity to reach their fullest potential, regardless of their background or circumstances. As an aspiring pediatrician, Annie hopes to build lifelong relationships with children and their families while promoting healthy development through compassionate, evidence-based care. As Executive Director and Chief Editor, she leads the organization's vision while overseeing the development and editing of Ready to Grow's workshops, caregiver guides, and educational resources to ensure they are engaging, accessible, and evidence-based.</p>
+                        </div>
                     </div>
-                    <div class="team-member-content">
-                        <h3>Advaita </h3>
-                        <p class="team-member-role">Resource Developer Director</p>
-                        <p>Advaita is a high school junior. She is thrilled to be a part of Ready to Grow because she believes that supporting children during their early years is key to building a brighter future. As someone passionate about working with kids and helping others, she is excited to contribute to this initiative and learn as much as she can along the way. She looks forward to creating meaningful connections with families and making a positive impact in the community.</p>
-                    </div>
-                </div>
 
-                <!-- Josephine -->
-                <div class="team-member">
-                    <div class="team-member-photo">
-                        <p>Josephine's Photo</p>
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/megan.png" alt="Megan Chien">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Megan Chien</p>
+                            <p class="team-card-role">Deputy Executive Director / Growth Director</p>
+                            <p class="team-card-bio">Megan Chien is a rising sophomore, Co-Founder of Ready to Grow, and Deputy Executive Director. She is passionate about improving children's health and development by ensuring every child has an equal opportunity to thrive, regardless of their background or circumstances. As an aspiring biomedical engineer and physician, Megan hopes to combine engineering, medicine, and community service to create innovative, evidence-based solutions for pediatric healthcare. As Deputy Executive Director, she helps lead the organization's growth and strategic direction by developing new initiatives, supporting cross-department collaboration, expanding community outreach, and overseeing projects that strengthen Ready to Grow's impact.</p>
+                        </div>
                     </div>
-                    <div class="team-member-content">
-                        <h3>Josephine </h3>
-                        <p class="team-member-role">Workshop Planning Director</p>
-                        <p>Josephine is a high school junior. Being a part of the Ready To Grow Initiative means so much to her because she is able to help and be there for children at some of the most important stages of their lives, helping guide them, and their parents, towards living a healthy and fulfilling life. She hopes to continue growing as a leader while making a lasting, positive impact on the families she serves.</p>
-                    </div>
-                </div>
 
-                <!-- Jeel -->
-                <div class="team-member">
-                    <div class="team-member-photo">
-                        <img src="Keel.jpg" alt="Jeel" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/pia.png" alt="Pia Odhrani">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Pia Odhrani</p>
+                            <p class="team-card-role">Outreach Director</p>
+                            <p class="team-card-bio">Pia is a rising high school sophomore with interests in aerospace engineering, filmmaking, and community service. She enjoys combining creativity and problem-solving through both STEM and film, using storytelling as a way to educate, inspire, and connect with others. She believes that collaboration and innovation can make learning more engaging and accessible for children of all backgrounds. Through Ready to Grow, Pia is dedicated to supporting young children and families by helping create meaningful educational opportunities and resources for her community.</p>
+                        </div>
                     </div>
-                    <div class="team-member-content">
-                        <h3>Jeel </h3>
-                        <p class="team-member-role">Caregiver Awareness Director</p>
-                        <p>Jeel is a high school sophomore with a strong passion for using her problem solving skills to help her community. She is excited to join Ready to Grow because she believes that supporting children in their important phases of life and being there for them is the base for a bright future. This initiative means a lot to her as it helps the parents by guiding them, and their children towards living a healthy and fulfilling life. She hopes to continue growing as a passionate leader while creating engaging and reliable material for parents, and continue learning from the inspiring community of peer and educators involved in this initiative.</p>
-                    </div>
-                </div>
 
-                <!-- Sai -->
-                <div class="team-member">
-                    <div class="team-member-photo">
-                        <img src="Sai.jpg" alt="Sai Datla" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/aria.png" alt="Aria Hsu">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Aria Hsu</p>
+                            <p class="team-card-role">Workshop Co-Director</p>
+                            <p class="team-card-bio">Aria Hsu is a rising sophomore and the Co-Director of the Workshop Department at Ready to Grow. She is passionate about working with children and creating meaningful learning experiences that support their growth and development. As an aspiring elementary school teacher or early childhood program director, Aria enjoys seeking out opportunities to work with and support younger children through volunteering, mentorship, and community involvement. Outside of school, she has played tennis for over three years and has completed multiple summers as a Counselor-in-Training (CIT) while also helping care for younger family members.</p>
+                        </div>
                     </div>
-                    <div class="team-member-content">
-                        <h3>Sai </h3>
-                        <p class="team-member-role">Innovation & Impact Director</p>
-                        <p>Sai is a high school junior with a strong interest in Cardiology and General Surgery. He has gained meaningful experience tutoring underserved children while actively raising funds to support their education and development. In addition, Sai serves as a UNICEF advocate at his school, where he works to promote children's rights and organizes monthly activities to engage and educate his peers. Through his work with the Ready to Grow initiative, he hopes to provide children with the guidance, resources, and opportunities they need to thrive, making a tangible difference in their early development and long-term success.</p>
-                    </div>
-                </div>
 
-                <!-- Pia -->
-                <div class="team-member">
-                    <div class="team-member-photo">
-                        <img src="PIA.jpg" alt="Pia Odharain" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/jeel.png" alt="Jeel Shrimali">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Jeel Shrimali</p>
+                            <p class="team-card-role">Caregiver Awareness Director</p>
+                            <p class="team-card-bio">Jeel Shrimali is a high school sophomore with a strong passion for using her problem solving skills to help her community. She is excited to join Ready to Grow because she believes that supporting children in their important phases of life and being there for them is the base for a bright future. This initiative means a lot to her as it helps the parents by guiding them, and their children towards living a healthy and fulfilling life. She hopes to continue growing as a passionate leader while creating engaging and reliable material for parents, and continue learning from the inspiring community of peers and educators involved in this initiative.</p>
+                        </div>
                     </div>
-                    <div class="team-member-content">
-                        <h3>Pia </h3>
-                        <p class="team-member-role">Outreach Director</p>
-                        <p>Pia is a high school freshman with an interest in Dermatology. She is excited to be part of the Ready to Grow Initiative to help underserved children and give back to the community. Her experience of working with children comes from tutoring for math and science, and robotics mentorship. As part of the initiative, she hopes to contribute and provide support in any way she can.</p>
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/sai.png" alt="Sai Datla">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Sai Datla</p>
+                            <p class="team-card-role">Innovation & Impact Director</p>
+                            <p class="team-card-bio">Sai Datla is a rising junior at Vista Ridge High School and serves as the Innovation & Impact Director for Ready to Grow. He is passionate about healthcare, research, and helping children and families access valuable resources. Through Ready to Grow, he enjoys developing new initiatives and finding creative ways to expand the organization's impact within the community. In the future, he hopes to pursue a career in medicine and continue making a positive impact in his community.</p>
+                        </div>
                     </div>
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/hadia.png" alt="Hadia Asad">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Hadia Asad</p>
+                            <p class="team-card-role">Co-Social Media Director</p>
+                            <p class="team-card-bio">Hadia is a high school student from Lahore, Pakistan, with a strong interest in biology-related fields, particularly biotechnology and pharmaceutical sciences. She is passionate about learning, exploring new opportunities, and challenging herself through meaningful experiences that foster both personal and academic growth. Driven by a desire to make a positive impact, she enjoys contributing to initiatives that support education and community development. Through her involvement with the Ready to Grow Initiative, Hadia is committed to helping young learners build confidence, develop foundational skills, and reach their full potential.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/lumana.png" alt="Lumana M.">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Lumana M.</p>
+                            <p class="team-card-role">Co-Social Media Director</p>
+                            <p class="team-card-bio">Lumana M. is a rising sophomore and serves as the Co-Social Media Director of Ready To Grow. She helps manage educational content that makes child development and health information more accessible to families through social media. Driven by a love for science and service, she aspires to become a dermatologist and make a meaningful difference in patients' lives. Outside of Ready To Grow, she enjoys reading, playing music, singing, dancing, and staying active through fitness.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+            <hr class="section-divider">
+
+            <!-- ===== INTERNATIONAL BOARD ===== -->
+            <div class="team-section">
+                <h2 class="section-title-green">International Board Members</h2>
+                <p class="section-subtitle">Our international board members bring diverse perspectives and talents to support Ready to Grow's global mission.</p>
+                <div class="team-grid">
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/madison.png" alt="Madison Mucetti">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Madison Mucetti</p>
+                            <p class="team-card-role">Growth Department Member</p>
+                            <p class="team-card-bio">Madison Mucetti is a senior psychology student at Oregon State University online. She is passionate about childhood development, working with neurodiverse children, and childhood grief as well as accessible learning and care with children in mind. She is an aspiring grief and neurodiversity informed therapist and social worker which is what drives her passion for the Ready to Grow Initiative. Alongside school and Ready to Grow, Madison is a member of the National Society of Leadership and Success, Psi Chi, and the Honors college at Oregon State University and currently working on a thesis for the honors college. Ready to Grow has given her the opportunity to use her psychology skills in child development as well as her interest in social justice and accessibility.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/irene.png" alt="Irene So">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Irene So</p>
+                            <p class="team-card-role">Outreach Department Member</p>
+                            <p class="team-card-bio">Irene So is a rising sophomore and an outreach board member of Ready to Grow. She is interested and passionate about improving medical care and wellness of underserved communities. She is pursuing the career of pediatrics, and hopes to utilize her career and experience to improve the accessibility of medical attention for those who don't have it. Alongside being a member of Ready to Grow, she is president of BHS GMMA, a chapter of Global Medical Missions Alliance. Through GMMA, she has opportunities to lead and go to communities to bring medicine to those who can't access it. She has also played tennis for 6 years.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/saanvi.png" alt="Saanvi Chaparala">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Saanvi Chaparala</p>
+                            <p class="team-card-role">Workshop Development Department Member</p>
+                            <p class="team-card-bio">Saanvi Chaparala is a rising sophomore and a member of the workshop development team. She is interested in child psychology which is why she chose to research adolescent development to create adolescent cognitive, emotional and physical workshops. She hopes to use this knowledge to help all children become educated adults. She is trying to create unique activities that are both fun and educational. Her main goal is to shift away from repetitive classroom games and give children a chance to learn new skills through fun innovated activities.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- ===== BECKMAN CHAPTER BOARD ===== -->
+            <div class="team-section">
+                <h2 class="section-title-pink">Beckman Chapter Board</h2>
+                <p class="section-subtitle">The Arnold O. Beckman High School chapter leads local outreach and volunteer efforts in our community.</p>
+                <div class="team-grid">
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/annie.png" alt="Annie Chien">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Annie Chien</p>
+                            <p class="team-card-role">Co-President</p>
+                            <p class="team-card-bio">Annie Chien is a rising senior, Co-Founder of the Ready to Grow Beckman Chapter, and Co-President of the chapter. She is passionate about fostering a culture of service and inspiring students to use their talents to support young children and families in the community. As Co-President, Annie helps guide the chapter by leading meetings, organizing volunteer opportunities, coordinating community outreach initiatives, and mentoring members as they develop leadership skills through service.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/megan.png" alt="Megan Chien">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Megan Chien</p>
+                            <p class="team-card-role">Co-President</p>
+                            <p class="team-card-bio">Megan Chien is a rising sophomore, Co-Founder of the Ready to Grow Beckman Chapter, and Co-President of the chapter. She is passionate about inspiring students to use their skills and interests to create meaningful change in their community. As Co-President, Megan helps lead the chapter by organizing volunteer opportunities, planning educational events, recruiting new members, and fostering a collaborative environment where students can make a lasting impact.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/aria.png" alt="Aria Hsu">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Aria Hsu</p>
+                            <p class="team-card-role">Vice President / Treasurer</p>
+                            <p class="team-card-bio">Aria Hsu is a rising sophomore at Arnold O. Beckman High School and serves as the Vice President and Treasurer of the Ready to Grow Club. She is passionate about supporting early childhood development and creating opportunities for students to make a meaningful impact in their community. As an aspiring elementary school teacher or early childhood program director, Aria enjoys taking on leadership roles that allow her to combine organization, teamwork, and service. Through her involvement in Ready to Grow, she helps coordinate club initiatives, manage fundraising efforts, and support projects that benefit children and families.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/reedy.png" alt="Reedy Biswas">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Reedy Biswas</p>
+                            <p class="team-card-role">Volunteer & Outreach Coordinator</p>
+                            <p class="team-card-bio">Hello! My name is Reedy and I'm a rising senior. I'm the Volunteer and Logistics Coordinator for Ready To Grow. This is my first year being a part of this organization and it's been a great experience meeting new people and communities. I love working with kids and volunteering to lead different workshops. My favorite part about being in my position is making new connections with my board members and the rest of Ready To Grow!</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/irene.png" alt="Irene So">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Irene So</p>
+                            <p class="team-card-role">Social Media Coordinator</p>
+                            <p class="team-card-bio">Irene So is a rising sophomore and the social media manager of BHS Ready to Grow. She decided to become a board member because she was interested in making a difference in the community and in early child development. As she pursues a career in pediatrics, she was intrigued at getting a head start in experience and exposure to working with children. As social media director, she manages the Instagram platform of BHS Ready to Grow, announcing future events, meetings, fundraisers, and posting recaps of events. She also helps plan fundraisers, workshop ideas, and meeting schedules during board meetings.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/lumana_beckman.png" alt="Lumana M.">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Lumana M.</p>
+                            <p class="team-card-role">Event Coordinator</p>
+                            <p class="team-card-bio">Lumana M. is a rising sophomore and serves as the Event Coordinator for the Ready To Grow Beckman Chapter. She enjoys helping organize community events that connect families with evidence-based child development and health resources in engaging and accessible ways. With a passion for biology and medicine, she hopes to become a dermatologist and provide compassionate care to her future patients. In her free time, Lumana enjoys reading, playing music, singing, dancing, and staying active through fitness.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- ===== OCSA CHAPTER BOARD ===== -->
+            <div class="team-section">
+                <h2 class="section-title-green">OCSA Chapter Board</h2>
+                <p class="section-subtitle">The Orange County School of the Arts chapter brings creativity and storytelling to Ready to Grow's mission.</p>
+                <div class="team-grid">
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/jenny.png" alt="Jenny">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Jenny</p>
+                            <p class="team-card-role">Co-President</p>
+                            <p class="team-card-bio">Co-President of the OCSA Ready to Grow chapter. Bio coming soon!</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/charlotte.png" alt="Charlotte Schuck">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Charlotte Schuck</p>
+                            <p class="team-card-role">Vice President</p>
+                            <p class="team-card-bio">Charlotte Schuck is an upcoming sophomore, and serves as the Vice President for OCSA Ready to Grow. In her role, Charlotte's focus is to support the club's members, help everyone feel included, and find ways to drive the organization's mission forward. She absolutely loves collaborating with others to bring fresh and creative ideas to the table that can help strengthen Ready to Grow's impact on the community. Throughout the upcoming year, she aims to bring positive and welcoming energy into everything the club does to help the entire community grow together.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/ariel.png" alt="Ariel Cho">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Ariel Cho</p>
+                            <p class="team-card-role">Secretary</p>
+                            <p class="team-card-bio">Ariel Cho is a rising sophomore and secretary of the Ready to Grow OCSA chapter. She loves to communicate and help children and students who are struggling with speaking, communicating, and expressing themselves. She hopes to assist her team to improve and expand the community through art, music, and community service to reach out to children who need or want their help. Through Ready to Grow, she is planning to learn more about communication for her team and to raise the children's voice, confidence, understanding, and awareness.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/julia.png" alt="Julia Tang & Janice Lee">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Julia Tang & Janice Lee</p>
+                            <p class="team-card-role">Social Media Managers</p>
+                            <p class="team-card-bio">Julia Tang, a rising sophomore at OCSA, is the Social Media Lead for OCSA Ready To Grow. She is incredibly passionate about using social media as a tool for advocacy and connection, highlighting student efforts, sharing mission-driven stories, and encouraging more people to get involved. Janice Lee is a high school freshman with a passion for film. She is excited to share about RTG and introduce people from all around the world to the Ready to Grow Initiative, believing that no matter what age, everyone deserves the same opportunities to be supported.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-photo" src="images/team/ava.png" alt="Ava Madison Gray">
+                        <div class="team-card-body">
+                            <p class="team-card-name">Ava Madison Gray</p>
+                            <p class="team-card-role">Educational Manager</p>
+                            <p class="team-card-bio">Ava Madison Gray is the Educational Manager for Ready to Grow. She also serves as the official liaison between the OCSA chapter and the nonprofit, helping coordinate communication and collaboration between both organizations. Some of her hobbies include singing, acting, dancing, and creating films. She is excited to be part of the team and looks forward to making a meaningful difference in the lives of young children by supporting their growth, development, and learning.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -205,7 +371,6 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="our-team.html">Our Team</a></li>
-                        <li><a href="our-team.html">Our Team</a></li>
                         <li><a href="workshops.html">Workshops</a></li>
                         <li><a href="curriculum.html">Curriculum</a></li>
                         <li><a href="caregiver-education.html">Caregiver Education</a></li>
@@ -216,12 +381,17 @@
                     <h4>SOCIALS</h4>
                     <div class="social-links">
                         <a href="https://www.facebook.com/profile.php?id=61577634476454" target="_blank" aria-label="Facebook">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                         </a>
                         <a href="https://www.instagram.com/readytogrow.initiative/" target="_blank" aria-label="Instagram">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                       
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
